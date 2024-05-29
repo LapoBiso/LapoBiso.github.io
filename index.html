@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Il mio blog</title>
+</head>
+<body>
+    <h1>Benvenuto sul mio blog!</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.title }}</li>
+            <p>{{ post.content }}</p>
+            <p>Data di pubblicazione: {{ post.date_posted }}</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
